@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+
+    <!--Google Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Own css -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header__Top-section">
+        <div class="Top__Left-section">
+            <div class="logo">
+                    <img src="assets/Logo_Horizontal.jpg" alt="Catholic Legal Services logo" />
+            </div>
+            <div class="left-dashboard">
+                <a>Dashboard</a>
+            </div>
+            <div class="left-find_candidates">
+                <a>Find Candidates</a>
+            </div>
+        </div>
+
+        <div class="Top__Right-section">
+          <div class="right__help">
+            <a>Need Help?</a>
+          </div>
+          <div class="right__Solution">
+            <a>Solution</a>
+          </div>
+          <div class="flex-group">
+            <i class="fa-regular fa-comments"></i>
+            <i class="fa-regular fa-user"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__Down-section">
+
+        <div class="down__Left-section"></div>
+        <div class="down__Right-section">
+            <div class="right__search-bar">
+                
+                <div class="imput-container">
+                    <input type="text" placeholder="Search Candidate"/>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="right__Button">
+                <button class="button">Post a Job</button>
+            </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="search flex-column">
+        
+            <div class="imput-container small">
+                <p>Open and paused jobs (3)</p>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+       
+
+        <div class="sort-search">
+                <div class="sort__left flex-group">
+                    <div class="imput-container">
+                        <input type="text" placeholder="Search job titles"/>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="imput-container">
+                        <input type="text" placeholder="Search location"/>
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                </div>
+                <div class="sort__Right flex-group">
+                    <div class="imput-container medium">
+                        <p>Sort by:<span>Posting Date</span></p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="imput-container medium">
+                        <p>Order:<span>Descending</span></p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+        </div>
+        
+      </section>
+
+      <section class="show-data flex-column medium-height"></section>
+
+      <section class="actions top-heaght">
+        <div class="action__messages flex-column card">
+            <div class="inner-upper">
+                <p>Menssages (0)</p>
+            </div>
+            <div class="inner-down flex-column">
+                <div class="relative">
+                    <img class="envelop" src="assets/envelop.jpg" alt="Image of an envelop">
+                    <p class="count">0</p>
+                </div>
+                
+                <span>No messages to display!</span>
+            </div>
+        </div>
+        <div class="action__interview flex-column card"></div>
+        <div class="action__sponsor flex-column card"></div>
+      </section>
+
+      <section class="other"></section>
+    </main>
+  </body>
+  <script defer src="script.js"></script>
+</html>
