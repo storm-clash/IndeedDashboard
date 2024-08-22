@@ -27,15 +27,18 @@
     <header>
       <div class="header__Top-section">
         <div class="Top__Left-section">
-            <div class="logo">
-                    <img src="assets/Logo_Horizontal.jpg" alt="Catholic Legal Services logo" />
-            </div>
-            <div class="left-dashboard">
-                <a>Dashboard</a>
-            </div>
-            <div class="left-find_candidates">
-                <a>Find Candidates</a>
-            </div>
+          <div class="logo">
+            <img
+              src="assets/Logo_Horizontal.jpg"
+              alt="Catholic Legal Services logo"
+            />
+          </div>
+          <div class="left-dashboard">
+            <a>Dashboard</a>
+          </div>
+          <div class="left-find_candidates">
+            <a>Find Candidates</a>
+          </div>
         </div>
 
         <div class="Top__Right-section">
@@ -53,77 +56,163 @@
       </div>
 
       <div class="header__Down-section">
-
-        <div class="down__Left-section"></div>
+        <div class="down__Left-section">
+          <ul class="flex-group">
+            <li class="nav_item">
+              <a href="#trainer_link" class="flex-row">
+                <span class="link-text">Jobs</span>
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#trainer_link" class="flex-row">
+                <span class="link-text">Candidates</span>
+              </a>
+            </li>
+            <li class="nav_item"> 
+              <a href="#trainer_link" class="flex-row">
+                <span class="link-text">Messages</span>
+              </a>
+            </li>
+          </ul>
+        </div>
         <div class="down__Right-section">
-            <div class="right__search-bar">
-                
-                <div class="imput-container">
-                    <input type="text" placeholder="Search Candidate"/>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
+          <div class="right__search-bar">
+            <div class="imput-container">
+              <input type="text" placeholder="Search Candidate" />
+              <i class="fa-solid fa-magnifying-glass"></i>
             </div>
-            <div class="right__Button">
-                <button class="button">Post a Job</button>
-            </div>
+          </div>
+          <div class="right__Button">
+            <button class="button">Post a Job</button>
+          </div>
         </div>
       </div>
     </header>
     <main>
       <section class="search flex-column">
-        
-            <div class="imput-container small">
-                <p>Open and paused jobs (3)</p>
-                <i class="fa-solid fa-chevron-down"></i>
-            </div>
-       
+        <div class="imput-container small">
+          <p class="link-text margin-top">Open and paused jobs (3)</p>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
 
         <div class="sort-search">
-                <div class="sort__left flex-group">
-                    <div class="imput-container">
-                        <input type="text" placeholder="Search job titles"/>
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
-                    <div class="imput-container">
-                        <input type="text" placeholder="Search location"/>
-                        <i class="fa-solid fa-location-dot"></i>
-                    </div>
-                </div>
-                <div class="sort__Right flex-group">
-                    <div class="imput-container medium">
-                        <p>Sort by:<span>Posting Date</span></p>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </div>
-                    <div class="imput-container medium">
-                        <p>Order:<span>Descending</span></p>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </div>
-                </div>
+          <div class="sort__left flex-group">
+            <div class="imput-container">
+              <input type="text" placeholder="Search job titles" />
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="imput-container">
+              <input type="text" placeholder="Search location" />
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+          </div>
+          <div class="sort__Right flex-group">
+            <div class="imput-container medium relative">
+              <p>Sort by:</p>
+              <select id="reading">
+                <option value="Select">Select</option>
+                <option value="Native">Native</option>
+                <option value="Advanced">Advanced</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Beginner">Beginner</option>
+            </select>
+            </div>
+            <div class="imput-container medium relative">
+              <p>Order:<span>Descending</span></p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+          </div>
         </div>
-        
       </section>
 
       <section class="show-data flex-column medium-height"></section>
 
       <section class="actions top-heaght">
         <div class="action__messages flex-column card">
-            <div class="inner-upper">
-                <p>Menssages (0)</p>
+          <div class="inner-upper">
+            <p>Menssages (0)</p>
+          </div>
+          <div class="inner-down flex-column">
+            <div class="relative">
+              <img
+                class="envelop"
+                src="assets/envelop.jpg"
+                alt="Image of an envelop"
+              />
+              <p class="count">0</p>
             </div>
-            <div class="inner-down flex-column">
-                <div class="relative">
-                    <img class="envelop" src="assets/envelop.jpg" alt="Image of an envelop">
-                    <p class="count">0</p>
-                </div>
-                
-                <span>No messages to display!</span>
-            </div>
+
+            <span>No messages to display!</span>
+          </div>
         </div>
-        <div class="action__interview flex-column card"></div>
-        <div class="action__sponsor flex-column card"></div>
+        <div class="action__interview flex-column card">
+          <div class="inner-upper">
+            <p>Interviews (0)</p>
+          </div>
+          <div class="inner-down flex-column">
+            <div class="relative">
+              <img
+                class="envelop"
+                src="assets/calendar.jpg"
+                alt="Image of an calendar"
+              />
+              <p class="count">0</p>
+            </div>
+
+            <span>There are no interviews scheduled!</span>
+          </div>
+        </div>
+        <div class="action__sponsor flex-column card">
+          <div class="inner-upper">
+            <p>Interviews (0)</p>
+          </div>
+          <div class="inner-down flex-column">
+            <div class="relative">
+              <img
+                class="envelop"
+                src="assets/envelop.jpg"
+                alt="Image of an envelop"
+              />
+              <p class="count">0</p>
+            </div>
+
+            <span>No Interview schedule!</span>
+          </div>
+        </div>
       </section>
 
-      <section class="other"></section>
+      <section class="other">
+        <div class="latter"></div>
+        <div class="social-network flex-column">
+          <div>
+            <span>Share your job on social network</span>
+          </div>
+          <div>
+            <ul class="flex-group gap">
+              <li>
+                <a href="#trainer_link" class="flex-row">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#trainer_link" class="flex-row">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#trainer_link" class="flex-row">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#trainer_link" class="flex-row">
+                  <i class="fa-solid fa-envelope"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
   <script defer src="script.js"></script>
