@@ -1,0 +1,118 @@
+.body__Secondary{
+    display: flex;
+}
+
+.candidates-list{
+    flex: 0 0 30%;
+    height: calc(100vh - 6rem);
+    overflow-y: auto;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.candidates-list::-webkit-scrollbar,
+main::-webkit-scrollbar {
+    width: 8px;
+    height: 10px;
+}
+.candidates-list::-webkit-scrollbar-thumb,
+main::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color de la barra de desplazamiento */
+    border-radius: 10px; /* Radio de borde para redondear las esquinas */
+}
+
+/* Estilo para la pista del scrollbar (Webkit) */
+.candidates-list::-webkit-scrollbar-track,
+main::-webkit-scrollbar-track {
+    background-color: #f0f0f0; /* Color de la pista de desplazamiento */
+}
+
+main {
+    flex: 0 0 70%;
+    background-color: var(--white);
+    padding: 1rem;
+    overflow-y: auto;
+    gap: .4rem;
+}
+main div:first-child {
+    min-height: 12rem;
+}
+
+.candidates-card {
+    width: 100%;
+    border-radius: .5rem;
+    min-height: 9rem;
+    padding: 1rem;
+    border: 1px solid red;
+}
+
+.main__info-display-container {
+    width: 100%;
+    height: auto;
+    border: 1px solid red;
+    display: flex;
+    padding: .5rem;
+}
+.main__info-display-container h4:first-child {
+    margin-bottom: .5rem;
+}
+
+.info-display__Principal {
+ flex: 0 0 70%;
+ 
+}
+.info-display__Principal > p {
+    font-size: 13px;
+}
+
+.info-display__Actions {
+    flex: 0 0 30%;
+    display: flex;
+    justify-content: center;
+}
+.info-actions {
+    display: grid;
+    width: 70%;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    height: 4rem;
+    margin: 0;
+    padding: .5rem 0;
+    list-style-type: none;
+}
+
+.info-actions li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    transition: all 600ms ease;
+}
+.info-actions li:last-child {
+    border: none;
+}
+.info-actions li:nth-child(1):hover {
+    background-color: green;
+}
+.info-actions li:nth-child(2):hover {
+    background-color: blue;
+}
+.info-actions li:nth-child(3):hover {
+    background-color: red;
+}
+
+.buttons-container{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    height: 100%;
+}
+.buttons-container button {
+    height: 2.5rem;
+    border-radius: .5rem;
+    border: none;
+}
+.buttons-container button:first-child {
+    color: var(--white);
+    background-color: var(--true-black);
+}   
